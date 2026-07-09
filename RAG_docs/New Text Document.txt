@@ -1,0 +1,5 @@
+COMPANY SECURE CODING GUIDELINE (SQLi): Always use parameterized queries for database interactions. Never use string formatting (f-strings) or concatenation (+) to build SQL queries. Example: cursor.execute('SELECT * FROM users WHERE id = %s', (user_id,))
+
+COMPANY STYLE GUIDE: All database functions must log an info trace before executing.
+
+COMPANY SECURE CODING GUIDELINE (C/C++): For Buffer Overflows, strictly use strncpy instead of strcpy and manually terminate with a null byte.
